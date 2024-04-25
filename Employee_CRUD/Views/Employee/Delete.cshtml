@@ -1,0 +1,28 @@
+﻿@model Employee
+<form method="post">
+    
+
+    <label asp-for="Id" class="p-0"> Id</label>
+    <input asp-for="Id" disabled class=" form-control" />
+
+    <label asp-for="Name" class="p-0"> Name</label>
+    <input asp-for="Name" disabled class=" form-control" />
+
+    <label asp-for="Email" class="p-0"> Email</label>
+    <input asp-for="Email" disabled class=" form-control" />
+
+
+    <div class="row">
+        <div class="col-6 col-md-3">
+            <button class="btn btn-primary form-control">Delete</button>
+
+        </div>
+
+        <div class="col-6 col-md-3">
+            <a asp-controller="Employee" asp-action="Index" class="btn btn-secondary form-control">
+                Back to List
+            </a>
+
+        </div>
+    </div>
+</form>
